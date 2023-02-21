@@ -14,6 +14,8 @@ class m230221_135729_create_about_table extends Migration
     {
         $this->createTable('{{%about}}', [
             'id' => $this->primaryKey(),
+            'title' => $this->string()->notNull(),
+            'description' => $this->text()->notNull()
         ]);
     }
 
