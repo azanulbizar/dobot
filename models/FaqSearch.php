@@ -18,7 +18,7 @@ class FaqSearch extends Faq
     {
         return [
             [['id'], 'integer'],
-            [['question', 'answer', 'create_date'], 'safe'],
+            [['question', 'answer'], 'safe'],
         ];
     }
 

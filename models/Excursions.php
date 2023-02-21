@@ -44,7 +44,7 @@ class Excursions extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'name' => Yii::t('app', 'Name'),
             'description' => Yii::t('app', 'Description'),
-            'create_date' => Yii::t('app', 'Create Date'),
+            'create_date' => Yii::t('app', 'Create date'),
         ];
     }
 }

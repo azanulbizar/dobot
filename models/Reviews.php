@@ -44,7 +44,7 @@ class Reviews extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'name' => Yii::t('app', 'Name'),
             'review' => Yii::t('app', 'Review'),
-            'date_create' => Yii::t('app', 'Date Create'),
+            'date_create' => Yii::t('app', 'Create date'),
         ];
     }
 }
