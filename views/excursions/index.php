@@ -15,8 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="excursions-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a(Yii::t('app', 'Create Excursions'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -35,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'description:ntext',
             'create_date',
             [
-                'class' => ActionColumn::className(),
+                'class' => ActionColumn::class,
                 'urlCreator' => function ($action, Excursions $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }

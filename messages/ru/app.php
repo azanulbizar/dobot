@@ -9,6 +9,7 @@ return [
     'Create date' => 'Дата создания',
     'Question' => 'Вопрос',
     'Answer' => 'Ответ',
+    'Excursions' => 'Экскурсии',
     'Create Excursions' => 'Добавить экскурсию',
     'Create Reviews' => 'Добавить отзыв',
 

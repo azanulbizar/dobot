@@ -10,7 +10,6 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Excursions'), 'url' 
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="excursions-create">
-
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
