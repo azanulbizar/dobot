@@ -4,16 +4,16 @@ use yii\db\Schema;
 use yii\db\Migration;
 
 /**
- * Class m230221_100430_create_files_table
+ * Class m230221_100430_create_table_rooms
  */
-class m230221_100430_create_files_table extends Migration
+class m230221_100430_create_table_rooms extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('rooms', [
+        $this->createTable('{{%rooms}}', [
             'id' => $this->primaryKey(),
             'extension' => $this->string()->notNull(),
             'description' => $this->text(),
@@ -32,6 +32,6 @@ class m230221_100430_create_files_table extends Migration
 
     public function down()
     {
-        $this->dropTable('rooms');
+        $this->dropTable('{{%rooms}}');
     }
 }
