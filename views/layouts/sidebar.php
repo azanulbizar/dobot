@@ -35,7 +35,7 @@
             <?php
             echo \hail812\adminlte\widgets\Menu::widget([
                 'items' => [
-                    [
+                    /*[
                         'label' => 'Starter Pages',
                         'icon' => 'tachometer-alt',
                         'badge' => '<span class="right badge badge-info">2</span>',
@@ -43,19 +43,22 @@
                             ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
                             ['label' => 'Inactive Page', 'iconStyle' => 'far'],
                         ]
-                    ],
+                    ],*/
                     //['label' => 'Отзывы', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">New</span>'],
-                    ['label' => 'Отзывы', 'url' => ['reviews/index']],
-                    ['label' => 'Вопрос-ответ', 'url' => ['faq/index']],
-                    ['label' => 'Экскурсии', 'url' => ['excursions/index']],
+                    ['label' => 'Об отеле', 'url' => ['about/index'], 'icon' => 'info'],
+                    ['label' => 'Отзывы', 'url' => ['reviews/index'], 'icon' => 'comments'],
+                    ['label' => 'Вопрос/Ответ', 'url' => ['faq/index'], 'icon' => 'question-circle'],
+                    ['label' => 'Экскурсии', 'url' => ['excursions/index'], 'icon' => 'bus'],
                     ['label' => 'НОМЕРА', 'header' => true],
                     ['label' => 'Категории', 'url' => ['rooms']],
-                    ['label' => 'Комнаты', 'url' => ['rooms']],
+                    ['label' => 'Комнаты', 'url' => ['rooms'], 'icon' => 'list'],
+                    ['label' => 'Бот', 'header' => true],
+                    ['label' => 'Пользователи', 'url' => ['bot/users'], 'icon' => 'user'],
                     ['label' => 'Yii2 PROVIDED', 'header' => true],
                     ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
                     ['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
-                    ['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
+                    /*['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
                     ['label' => 'Level1'],
                     [
                         'label' => 'Level1',
@@ -73,11 +76,11 @@
                             ['label' => 'Level2', 'iconStyle' => 'far']
                         ]
                     ],
-                    ['label' => 'Level1'],
-                    ['label' => 'LABELS', 'header' => true],
+                    ['label' => 'Level1'],*/
+                    /*['label' => 'LABELS', 'header' => true],
                     ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
                     ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
-                    ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
+                    ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],*/
                 ],
             ]);
             ?>
